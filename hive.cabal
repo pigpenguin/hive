@@ -3,13 +3,13 @@
 
 name:                hive
 version:             0.1.0.0
-synopsis:            Messing around with representing the hive board game in haskell
--- description:         
--- license:             
+synopsis:            Haskell hive stuff 
+description:         Messing around with representing the hive board game in haskell
+license:             BSD3
 license-file:        LICENSE
 author:              pigpenguin
 maintainer:          ethan@rooke.org
--- copyright:           
+copyright:           2015, pigpenguin
 category:            Game
 build-type:          Simple
 -- extra-source-files:  
@@ -17,8 +17,11 @@ cabal-version:       >=1.10
 
 executable hive
   main-is:             Main.hs
+  ghc-options:         -Wall
   -- other-modules:       
   -- other-extensions:    
-  build-depends:       base >=4.8 && <4.9
+  build-depends:       base >=4.8 && <4.9,
+                       diagrams,
+                       grid
   hs-source-dirs:      src
   default-language:    Haskell2010
